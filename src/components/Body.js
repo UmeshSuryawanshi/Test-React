@@ -73,7 +73,7 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurant/" + restaurant.info.id}
           >
-            {restaurant.info.totalRatingsString === "6.9K+" ? <RestaurantCardPromoted resData={restaurant}/> : <RestaurantCard resData={restaurant} />}            
+            {restaurant.info.avgRating >= 4.5 ? <RestaurantCardPromoted resData={restaurant}/> : <RestaurantCard resData={restaurant} />}            
           </Link>
         ))}
       </div>
