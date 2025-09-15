@@ -24,7 +24,7 @@ class UserClass extends React.Component {
     }
 
     render() {
-        console.log(this.state);
+        //console.log(this.state);
         const { name, location, login, avatar_url} = this.state.userInfo;
         
         return (
